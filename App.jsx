@@ -26,6 +26,14 @@ import ListFlatList from './components/ListFlatList';
 import MapNScroll from './components/MapNScroll';
 import GridComponent from './components/GridComponent';
 import LoopWithFlatlist from './components/LoopWithFlatlist';
+import Sectionlist from './components/Sectionlist';
+import UseEffectHook from './components/UseEffectHook';
+import SHT_compo from './components/SHT_unmount';
+import SHT_unmount from './components/SHT_unmount';
+import ResponsiveUI from './components/ResponsiveUI';
+import Touchablehigh from './components/Touchablehigh';
+import Radio1 from './components/Radio1';
+import DynamicRadio from './components/dynamicRadio';
 
 const App = () => {
   const name = 'Sankey';
@@ -47,8 +55,8 @@ const App = () => {
     console.warn(val);
   };
 
-  return (
-    <View>
+  return <DynamicRadio></DynamicRadio>
+    
       {/* <Text style={{fontSize: 30}}>Hello React Native</Text>
       <Button title="Press here"></Button>
       <Text style={{fontSize: 30}}>Subscribe</Text>
@@ -84,9 +92,16 @@ const App = () => {
       {/* <ListFlatList></ListFlatList> */}
       {/* <MapNScroll></MapNScroll> */}
       {/* <GridComponent></GridComponent> */}
-      <LoopWithFlatlist></LoopWithFlatlist>
-    </View>
-  );
+      {/* <LoopWithFlatlist></LoopWithFlatlist> */}
+      {/* <Sectionlist></Sectionlist> */}
+      {/* <UseEffectHook></UseEffectHook> */}
+      {/* <SHT_unmount></SHT_unmount> */}
+      {/* <ResponsiveUI></ResponsiveUI> */} //-----
+      {/* <Touchablehigh></Touchablehigh> */}
+      // <Radio1></Radio1> //-----
+      
+    
+ 
 };
 
 const styles = StyleSheet.create({
