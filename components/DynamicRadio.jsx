@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
-import {Text, View, TouchableOpacity, StyleSheet} from 'react-native';
+import {View, TouchableOpacity, Text, StyleSheet} from 'react-native';
 
 const DynamicRadio = () => {
+  const [selectedRadio, setSelectedRadio] = useState(1);
+
   const skills = [
     {
       id: 1,
@@ -17,28 +19,32 @@ const DynamicRadio = () => {
     },
     {
       id: 4,
-      name: 'C++',
+      name: 'React-native',
+    },
+    {
+      id: 5,
+      name: 'Node',
     },
   ];
 
   return (
-    <View>
-      <Text>Dynamic radio buttons</Text>
-      {skills.map(
+    <View style={styles.main}>
+      {skills.map((item, index) => (
         <TouchableOpacity
+          key={index}
           onPress={() => {
-            setSelectedRadio(1);
+            setSelectedRadio(item.id);
           }}>
           <View style={styles.radioWrapper}>
             <View style={styles.radio}>
-              {selectedRadio === 1 ? (
+              {selectedRadio === item.id ? (
                 <View style={styles.radiobg}></View>
               ) : null}
             </View>
-            <Text style={styles.radioText}>Radio 1</Text>
+            <Text style={styles.radioText}>{item.name}</Text>
           </View>
-        </TouchableOpacity>,
-      )}
+        </TouchableOpacity>
+      ))}
     </View>
   );
 };

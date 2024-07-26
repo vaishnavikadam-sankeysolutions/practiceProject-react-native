@@ -33,7 +33,13 @@ import SHT_unmount from './components/SHT_unmount';
 import ResponsiveUI from './components/ResponsiveUI';
 import Touchablehigh from './components/Touchablehigh';
 import Radio1 from './components/Radio1';
-import DynamicRadio from './components/dynamicRadio';
+import DynamicRadio from './components/DynamicRadio';
+import ActivityIndi from './components/ActivityIndi';
+import ModalViews from './components/ModalViews';
+import PressableBtns from './components/PressableBtns';
+import Statusbar from './components/Statusbar';
+import PlatformCheck from './components/PlatformCheck';
+import Webview from './components/Webview';
 
 const App = () => {
   const name = 'Sankey';
@@ -55,9 +61,10 @@ const App = () => {
     console.warn(val);
   };
 
-  return <DynamicRadio></DynamicRadio>
-    
-      {/* <Text style={{fontSize: 30}}>Hello React Native</Text>
+  return <PlatformCheck></PlatformCheck>
+
+  {
+    /* <Text style={{fontSize: 30}}>Hello React Native</Text>
       <Button title="Press here"></Button>
       <Text style={{fontSize: 30}}>Subscribe</Text>
       <Button title="Tap here"></Button>
@@ -80,28 +87,58 @@ const App = () => {
       <ReactStyles></ReactStyles>
       <Text style={[ExStyles.textBox, {marginTop: 15}]}>
         Styles in react-native
-      </Text> */}
-      {/* <Text style={{fontSize: 30}}>Your name is: {namee} </Text>
+      </Text> */
+  }
+  {
+    /* <Text style={{fontSize: 30}}>Your name is: {namee} </Text>
       <TextInput
         placeholder="Enter your name"
         style={styles.textInput}
         value={namee}
         onChangeText={text => setNamee(text)}></TextInput>
-      <Button title="Clear Input Value" onPress={() => setNamee('')}></Button> */}
-      {/* <SimpleForm></SimpleForm> */}
-      {/* <ListFlatList></ListFlatList> */}
-      {/* <MapNScroll></MapNScroll> */}
-      {/* <GridComponent></GridComponent> */}
-      {/* <LoopWithFlatlist></LoopWithFlatlist> */}
-      {/* <Sectionlist></Sectionlist> */}
-      {/* <UseEffectHook></UseEffectHook> */}
-      {/* <SHT_unmount></SHT_unmount> */}
-      {/* <ResponsiveUI></ResponsiveUI> */} //-----
-      {/* <Touchablehigh></Touchablehigh> */}
-      // <Radio1></Radio1> //-----
-      
-    
- 
+      <Button title="Clear Input Value" onPress={() => setNamee('')}></Button> */
+  }
+  {
+    /* <SimpleForm></SimpleForm> */
+  }
+  {
+    /* <ListFlatList></ListFlatList> */
+  }
+  {
+    /* <MapNScroll></MapNScroll> */
+  }
+  {
+    /* <GridComponent></GridComponent> */
+  }
+  {
+    /* <LoopWithFlatlist></LoopWithFlatlist> */
+  }
+  {
+    /* <Sectionlist></Sectionlist> */
+  }
+  // ***
+  {
+    /* <UseEffectHook></UseEffectHook> */
+  }
+  {
+    /* <SHT_unmount></SHT_unmount> */
+  }
+  {
+    /* <ResponsiveUI></ResponsiveUI> */
+  } //-----
+  {
+    /* <Touchablehigh></Touchablehigh> */
+  }
+  // <Radio1></Radio1> //-----
+  // <DynamicRadio></DynamicRadio>
+  // <ActivityIndi></ActivityIndi>
+  // <ModalViews></ModalViews>;
+  // <DynamicRadio></DynamicRadio>;
+  // <ModalViews></ModalViews>
+  // <PressableBtns></PressableBtns>
+  // <Statusbar></Statusbar>
+  // <PlatformCheck></PlatformCheck>;
+  // <Webview></Webview>
 };
 
 const styles = StyleSheet.create({
